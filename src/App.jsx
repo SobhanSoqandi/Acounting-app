@@ -4,13 +4,12 @@ import './App.css'
 
 function App() {
 
-  const [ number , setNumber ] = useState(1);
 
   return (
     <>
   
 
-<h1> Hellow Worldddd </h1>
+<h1> Acounting App </h1>
   
     </>
   )
