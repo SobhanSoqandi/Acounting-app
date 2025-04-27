@@ -41,7 +41,7 @@ function UserLayout() {
           <li  >
             <a href="#" class="flex items-center p-2 pl-6 sm:pl-4 hover:text-indigo-600 hover:bg-gradient-to-r from-indigo-200 from-1% via-white via-20% to-white to-90% ">
               <IoNotifications className="w-5 h-5" />
-              <span class="ms-2 hidden sm:block">in voice</span>
+              <span class="ms-2 hidden sm:block"> Notifocation </span>
             </a>
           </li>
           <li  >
