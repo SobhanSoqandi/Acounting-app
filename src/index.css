@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    .text-sidebar {
+        color: #9a9aa9;
+    }
+
+}
+
+
+@layer components {
+
+    .btn {
+        @apply rounded-xl p-1 text-sm shadow-lg
+    }
+
+    .btn--primary {
+        @apply text-white bg-[#605BFF] hover:bg-indigo-600 transition-all duration-300;
+    }
+}
