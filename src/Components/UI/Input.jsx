@@ -1,10 +1,17 @@
 import React from 'react'
 
-function Input({type , label }) {
+function Input({ type, label }) {
+
+   
+
     return (
-        <div className="grid grid-cols-1 m-10" >
-            <span className="my-2 text-blue-900 " > {label} </span>
-            <input className="bg-slate-50 rounded-md p-2 w-56 text-blue-800 " type={type} />
+        <div>
+            <label for={label} className="block my-2 text-md text-[#00000]">{label}</label>
+            <input
+                id={label}
+                type={type}
+                className="input--style"
+            />
         </div>
     )
 }

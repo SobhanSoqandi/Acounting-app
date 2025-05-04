@@ -7,6 +7,10 @@ import "./index.css";
 import UserLayout from './Components/featurs/Authentication/UserLayout';
 import AppLayout from './Components/UI/AppLayout';
 
+import ForgetPassword from './Components/featurs/Authentication/ForgetPassword';
+import Login from './Components/Pages/Login';
+import Register from './Components/Pages/Register';
+
 function App() {
 
 
@@ -21,6 +25,10 @@ function App() {
         <Routes>
           <Route path="/layout" element={<UserLayout />} />
           <Route path="/app" element={<AppLayout />} />
+          <Route path="/auth" element={<Login />} />
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
 
