@@ -4,6 +4,7 @@ import { BiLogoTailwindCss } from 'react-icons/bi'
 import { FaFacebookF } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 import CheckBoxInput from '../../UI/CheckBoxInput'
+import SingButton from '../../UI/SingButton'
 
 function AuthRegister() {
     return (
@@ -16,21 +17,24 @@ function AuthRegister() {
                         Sing Up
                     </div>
 
-                    <div className="lg:flex justify-center gap-x-4">
-                        <a href="#">
-                            <button className="w-full text-center p-3 px-16 my-3 flex items-center justify-center rounded-xl bg-gray-50">
-                                <FcGoogle className="text-xl" />
-                                <span> Google</span>
-                            </button>
-                        </a>
 
-                        <a href="#" >
-                            <button className="w-full  text-center p-3 px-16 my-3 flex items-center justify-center  rounded-xl bg-gray-50">
-                                <FaFacebookF className="text-blue-600 text-xl" />
-                                <span>Facebook</span>
-                            </button>
-                        </a>
+                    <div className="lg:grid grid-cols-2 mx-auto gap-x-4">
+                        <SingButton>
+                            <FcGoogle className="text-xl" />
+                            <span> Google</span>
+                        </SingButton>
+
+                        <SingButton>
+
+                            <FaFacebookF className="text-blue-600 text-xl" />
+                            <span>Facebook</span>
+                        </SingButton>
                     </div>
+
+
+
+
+
 
                     <div className="my-4 border-b text-center">
                         <div
@@ -43,10 +47,10 @@ function AuthRegister() {
                     <Input type="text" label="Username" />
                     <Input type="password" label="Password" />
 
-                        <CheckBoxInput 
+                    <CheckBoxInput
                         label="By creating an account you agree to the terms of use and our privacy policy."
-                        />
-                  
+                    />
+
 
 
                     <button className="btn btn--primary w-full my-5" > Login </button>

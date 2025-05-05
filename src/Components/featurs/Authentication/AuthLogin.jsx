@@ -3,6 +3,8 @@ import Input from '../../UI/Input'
 import { BiLogoTailwindCss } from 'react-icons/bi'
 import { FaFacebookF } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
+import SingButton from '../../UI/SingButton'
+import CheckBoxInput from '../../UI/CheckBoxInput'
 
 function AuthLogin() {
     return (
@@ -15,20 +17,18 @@ function AuthLogin() {
                         Log in
                     </div>
 
-                    <div className="lg:flex justify-center gap-x-4">
-                        <a href="#">
-                            <button className="w-full text-center p-3 px-16 my-3 flex items-center justify-center rounded-xl bg-gray-50">
-                                <FcGoogle className="text-xl" />
-                                <span> Google</span>
-                            </button>
-                        </a>
+                    <div className="lg:grid grid-cols-2 gap-x-4">
 
-                        <a href="#" >
-                            <button className="w-full  text-center p-3 px-16 my-3 flex items-center justify-center  rounded-xl bg-gray-50">
-                                <FaFacebookF className="text-blue-600 text-xl" />
-                                <span>Facebook</span>
-                            </button>
-                        </a>
+                        <SingButton>
+                            <FcGoogle className="text-xl" />
+                            <span> Google</span>
+                        </SingButton>
+
+                        <SingButton>
+                            <FaFacebookF className="text-blue-600 text-xl" />
+                            <span>Facebook</span>
+                        </SingButton>
+
                     </div>
 
                     <div className="my-4 border-b text-center">
@@ -42,15 +42,11 @@ function AuthLogin() {
                     <Input type="password" label="Password" />
 
                     <div className="flex items-center justify-between text-sm">
-                        <div className="flex items-start">
-                            <div className="flex items-center h-5">
-                                <input id="remember" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300" />
-                            </div>
-                            <div className="ml-2">
-                                <label for="remember">Remember me</label>
-                            </div>
+                       
+                       <CheckBoxInput
+                       label="Remember Me"
+                       />
 
-                        </div>
                         <a className="link--style"> Reset Password </a>
                     </div>
 

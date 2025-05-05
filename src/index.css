@@ -25,6 +25,6 @@
     }
 
     .link--style {
-       @apply text-[#605BFF] hover:underline p-2
+       @apply text-[#605BFF] hover:underline p-2 mt-3
     }
 }
