@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+td {
+    color: #030229;
+    background: #ffff;
+    font-weight: 400;
+}
+
+th{
+    color: #4f4f58;
+    font-weight: 350;
+}
+
+
 @layer base {
 
     .text-sidebar {

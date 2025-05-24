@@ -10,9 +10,22 @@ import AppLayout from './Components/UI/AppLayout';
 import ForgetPassword from './Components/featurs/Authentication/ForgetPassword';
 import Login from './Components/Pages/Login';
 import Register from './Components/Pages/Register';
+import UserList from './Components/Pages/UserList';
 
 function App() {
 
+  // const BrowserRouter = createBrowserRouter([
+  //   {
+
+  //     children: [
+  //       {
+  //         path : "/layout" ,
+  //         element : <UserLayout />
+  //       },
+
+  //     ],
+  //   },
+  // ])
 
   return (
     <>
@@ -29,6 +42,7 @@ function App() {
           <Route path="/forgetpassword" element={<ForgetPassword />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/users" element={<UserList />} />
         </Routes>
       </BrowserRouter>
 
