@@ -43,7 +43,13 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/users" element={<UserList />} />
+
+   
+          <Route path="/users" element={<UserLayout />} >
+            <Route path="list" element={<UserList />} />
+          </Route>
         </Routes>
+   
       </BrowserRouter>
 
 

@@ -14,7 +14,6 @@ function UserLayout() {
     <div>
       <AppLayout>
 
-
         <Sidebar >
 
           <li >
@@ -57,7 +56,6 @@ function UserLayout() {
             </a>
           </li>
         </Sidebar>
-
 
       </AppLayout>
     </div>

@@ -13,7 +13,6 @@ function Sidebar({ children }) {
                     <h5 className="hidden sm:block font-bold text-xl">Acounting</h5>
                 </div>
 
-                {/* Menu Items */}
                 <ul className="text-sm text-sidebar sm:w-full space-y-3 m-auto">
                     {children}
                 </ul>
