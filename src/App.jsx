@@ -11,6 +11,7 @@ import ForgetPassword from './Components/featurs/Authentication/ForgetPassword';
 import Login from './Components/Pages/Login';
 import Register from './Components/Pages/Register';
 import UserList from './Components/Pages/UserList';
+import Setting from './Components/Pages/Setting';
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
       {/* <ForgetPassword /> */}
 
       <BrowserRouter>
-        <Routes>
+        {/* <Routes>
           <Route path="/layout" element={<UserLayout />} />
           <Route path="/app" element={<AppLayout />} />
           <Route path="/auth" element={<Login />} />
@@ -43,13 +44,17 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/users" element={<UserList />} />
-
-   
           <Route path="/users" element={<UserLayout />} >
             <Route path="list" element={<UserList />} />
           </Route>
+        </Routes> */}
+
+        <Routes>
+          <Route path="/layout" element={<UserLayout />} >
+            <Route path="setting" element={<Setting />} />
+          </Route>
         </Routes>
-   
+
       </BrowserRouter>
 
 
