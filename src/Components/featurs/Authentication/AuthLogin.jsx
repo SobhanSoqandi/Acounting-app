@@ -5,11 +5,12 @@ import { FaFacebookF } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 import SingButton from '../../UI/SingButton'
 import CheckBoxInput from '../../UI/CheckBoxInput'
+import { Link } from 'react-router-dom'
 
 function AuthLogin() {
     return (
         <div className="min-w-screen-xl h-screen bg-gray-50 sm:rounded-lg flex justify-center flex-1">
-            <div className="lg:w-1/2 xl:w-4/12 p-6 sm:w-8/12 w-full bg-white">
+            <div className="w-full bg-white lg:w-1/2 xl:w-4/12 p-6 sm:w-8/12 ">
 
                 <div >
                     <div className="flex flex-col items-center xl:py-5" >
@@ -17,7 +18,7 @@ function AuthLogin() {
                         Log in
                     </div>
 
-                    <div className="lg:grid grid-cols-2 gap-x-4">
+                    <div className="grid-cols-2 gap-x-4 lg:grid">
 
                         <SingButton>
                             <FcGoogle className="text-xl" />
@@ -55,7 +56,7 @@ function AuthLogin() {
 
                     <div className="text-center" >
                         <span> Dont have account yet?  </span>
-                        <a className="link--style" > New Account </a>
+                        <Link className="link--style" to="/Register" > Register </Link>
                     </div>
 
                 </div>

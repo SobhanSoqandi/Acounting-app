@@ -14,7 +14,7 @@ function AppLayout({ children }) {
 
 
         <div className="m-4 w-full" >
-          <Outlet /> 
+          <Outlet />
         </div>
 
       </div>

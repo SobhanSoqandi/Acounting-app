@@ -5,6 +5,7 @@ import { FaFacebookF } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 import CheckBoxInput from '../../UI/CheckBoxInput'
 import SingButton from '../../UI/SingButton'
+import { Link } from 'react-router-dom'
 
 function AuthRegister() {
     return (
@@ -57,7 +58,7 @@ function AuthRegister() {
 
                     <div className="text-center" >
                         <span> Already have an account?  </span>
-                        <a className="link--style" > Login </a>
+                        <Link className="link--style" to="/login" > Login </Link>
                     </div>
 
                 </div>

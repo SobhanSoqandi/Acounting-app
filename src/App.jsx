@@ -12,6 +12,7 @@ import Login from './Components/Pages/Login';
 import Register from './Components/Pages/Register';
 import UserList from './Components/Pages/UserList';
 import Setting from './Components/Pages/Setting';
+import Callender from './Components/Pages/Callender';
 
 function App() {
 
@@ -50,8 +51,12 @@ function App() {
         </Routes> */}
 
         <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/layout" element={<UserLayout />} >
             <Route path="setting" element={<Setting />} />
+            <Route path="callender" element={<Callender />} />
+             <Route path="users" element={<UserList />} />
           </Route>
         </Routes>
 
